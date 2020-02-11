@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <link rel=icon href=/favicon.ico> <link rel=stylesheet type=text/css href=/loader.css> <script
+        src=https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js> </script> <title>Vuesax - Vuejs Admin
+    Dashboard Template</title>
+    <link href=/css/chunk-04943348.8dbf901f.css rel=prefetch>
+    <link href=/css/chunk-08fe4629.5911432e.css rel=prefetch>
+    <link href=/css/chunk-0a1d94ff.7813caa7.css rel=prefetch>
+    <link href=/css/chunk-121bf8da.5acaebc3.css rel=prefetch>
+    <link href=/css/chunk-1991e9ed.57e3882a.css rel=prefetch>
+    <link href=/css/chunk-25bdc4a6.bda8a4bd.css rel=prefetch>
+    <link href=/css/chunk-26b10233.b60c000c.css rel=prefetch>
+    <link href=/css/chunk-29f7cf1b.0a811aa5.css rel=prefetch>
+    <link href=/css/chunk-2c3dacf4.d1cedf5c.css rel=prefetch>
+    <link href=/css/chunk-3245495b.636966b8.css rel=prefetch>
+    <link href=/css/chunk-3daf759c.c2bcd7b2.css rel=prefetch>
+    <link href=/css/chunk-412a3470.ee0fc12f.css rel=prefetch>
+    <link href=/css/chunk-417b1f08.4154064f.css rel=prefetch>
+    <link href=/css/chunk-4214295b.a2844a8f.css rel=prefetch>
+    <link href=/css/chunk-4266cb0e.13091d46.css rel=prefetch>
+    <link href=/css/chunk-48626451.ae2aefea.css rel=prefetch>
+    <link href=/css/chunk-50e859e2.c7ba7a1d.css rel=prefetch>
+    <link href=/css/chunk-551db3de.119c7874.css rel=prefetch>
+    <link href=/css/chunk-554b2e65.1a2b623b.css rel=prefetch>
+    <link href=/css/chunk-5a132a97.bd50eac7.css rel=prefetch>
+    <link href=/css/chunk-5b50f5d7.8b9d7445.css rel=prefetch>
+    <link href=/css/chunk-5ccb5b1a.0be9d80b.css rel=prefetch>
+    <link href=/css/chunk-5f143586.91048b65.css rel=prefetch>
+    <link href=/css/chunk-5fb933a8.f0fdbd88.css rel=prefetch>
+    <link href=/css/chunk-61cbbfa6.39d0878f.css rel=prefetch>
+    <link href=/css/chunk-61de5838.189ca40c.css rel=prefetch>
+    <link href=/css/chunk-64025dce.b23fdc7a.css rel=prefetch>
+    <link href=/css/chunk-643be02a.189ca40c.css rel=prefetch>
+    <link href=/css/chunk-6b1b6bf7.82873ec5.css rel=prefetch>
+    <link href=/css/chunk-757b809d.6641bace.css rel=prefetch>
+    <link href=/css/chunk-764d1871.46344344.css rel=prefetch>
+    <link href=/css/chunk-770c52fc.5a0ed78b.css rel=prefetch>
+    <link href=/css/chunk-7b249b87.ca60cd81.css rel=prefetch>
+    <link href=/css/chunk-8d2aa0c4.0c510d3b.css rel=prefetch>
+    <link href=/css/chunk-8eb5ffa6.e3b7eb95.css rel=prefetch>
+    <link href=/css/chunk-958445f8.6e2ed8d0.css rel=prefetch>
+    <link href=/css/chunk-9c8fcbe6.dea2b85f.css rel=prefetch>
+    <link href=/css/chunk-a2dcb642.189ca40c.css rel=prefetch>
+    <link href=/css/chunk-a4c6d038.875b89fb.css rel=prefetch>
+    <link href=/css/chunk-a6c77268.b1ef2499.css rel=prefetch>
+    <link href=/css/chunk-b7742df6.c2615da2.css rel=prefetch>
+    <link href=/css/chunk-bd85960e.58aaa6c1.css rel=prefetch>
+    <link href=/css/chunk-c0d7a86e.17ad18d3.css rel=prefetch>
+    <link href=/css/chunk-cc996eea.8c5d1229.css rel=prefetch>
+    <link href=/css/chunk-d029bed6.9ec20d1b.css rel=prefetch>
+    <link href=/css/chunk-d212f7da.20a0d57c.css rel=prefetch>
+    <link href=/css/chunk-d82d841e.065149e2.css rel=prefetch>
+    <link href=/css/chunk-f3c67876.24076e99.css rel=prefetch>
+    <link href=/css/chunk-f463b15a.292a7c17.css rel=prefetch>
+    <link href=/js/chunk-04943348.03e4cff7.js rel=prefetch>
+    <link href=/js/chunk-08fe4629.ad2f5211.js rel=prefetch>
+    <link href=/js/chunk-0a1d94ff.3a42028e.js rel=prefetch>
+    <link href=/js/chunk-121bf8da.a15b2f5b.js rel=prefetch>
+    <link href=/js/chunk-13548f00.8f8f73b3.js rel=prefetch>
+    <link href=/js/chunk-17bbd880.68c8c766.js rel=prefetch>
+    <link href=/js/chunk-1991e9ed.4a9845bf.js rel=prefetch>
+    <link href=/js/chunk-1f4aae39.67d33e74.js rel=prefetch>
+    <link href=/js/chunk-1febc2da.2b1b8046.js rel=prefetch>
+    <link href=/js/chunk-21fc9d92.9d956093.js rel=prefetch>
+    <link href=/js/chunk-25bdc4a6.139a428b.js rel=prefetch>
+    <link href=/js/chunk-26b10233.a356e2be.js rel=prefetch>
+    <link href=/js/chunk-29f7cf1b.64a51b7e.js rel=prefetch>
+    <link href=/js/chunk-2b58d76e.e0207907.js rel=prefetch>
+    <link href=/js/chunk-2c3dacf4.83d4d594.js rel=prefetch>
+    <link href=/js/chunk-2d0a3361.97f76fe2.js rel=prefetch>
+    <link href=/js/chunk-2d0a518f.ca65f9b0.js rel=prefetch>
+    <link href=/js/chunk-2d0af09c.6738767c.js rel=prefetch>
+    <link href=/js/chunk-2d0af116.267e550f.js rel=prefetch>
+    <link href=/js/chunk-2d0b2b24.a1db89b5.js rel=prefetch>
+    <link href=/js/chunk-2d0b2f18.62e07c37.js rel=prefetch>
+    <link href=/js/chunk-2d0b7299.ffc67cb2.js rel=prefetch>
+    <link href=/js/chunk-2d0bfe9a.589d46cb.js rel=prefetch>
+    <link href=/js/chunk-2d0c04c4.c92333bd.js rel=prefetch>
+    <link href=/js/chunk-2d0c1c9a.3df06199.js rel=prefetch>
+    <link href=/js/chunk-2d0c4db9.554533db.js rel=prefetch>
+    <link href=/js/chunk-2d0c82ec.6cdc3c51.js rel=prefetch>
+    <link href=/js/chunk-2d0c8fea.d0c10e33.js rel=prefetch>
+    <link href=/js/chunk-2d0d6ed5.57d02937.js rel=prefetch>
+    <link href=/js/chunk-2d0dddb3.db2f4e44.js rel=prefetch>
+    <link href=/js/chunk-2d0e4a90.8ff6346e.js rel=prefetch>
+    <link href=/js/chunk-2d0e9260.8e91f031.js rel=prefetch>
+    <link href=/js/chunk-2d0f0c32.d8cbf4be.js rel=prefetch>
+    <link href=/js/chunk-2d0f0de4.0ff24ba6.js rel=prefetch>
+    <link href=/js/chunk-2d0f1519.48ea6ffd.js rel=prefetch>
+    <link href=/js/chunk-2d20795b.725668e3.js rel=prefetch>
+    <link href=/js/chunk-2d2079b7.0247aca0.js rel=prefetch>
+    <link href=/js/chunk-2d208dc0.abcb2b04.js rel=prefetch>
+    <link href=/js/chunk-2d2095bf.fa3c3c21.js rel=prefetch>
+    <link href=/js/chunk-2d210f45.678f4f26.js rel=prefetch>
+    <link href=/js/chunk-2d21334a.050b5eb5.js rel=prefetch>
+    <link href=/js/chunk-2d217a3d.37b31ae5.js rel=prefetch>
+    <link href=/js/chunk-2d219ff9.8b08a6b1.js rel=prefetch>
+    <link href=/js/chunk-2d21b49d.53c2759f.js rel=prefetch>
+    <link href=/js/chunk-2d21d4ee.96ceaef4.js rel=prefetch>
+    <link href=/js/chunk-2d21d854.32976779.js rel=prefetch>
+    <link href=/js/chunk-2d21eb79.0082a816.js rel=prefetch>
+    <link href=/js/chunk-2d229624.17d5be67.js rel=prefetch>
+    <link href=/js/chunk-2d229da4.215df7a1.js rel=prefetch>
+    <link href=/js/chunk-2d22c341.1e6aa17d.js rel=prefetch>
+    <link href=/js/chunk-2d22fcf4.3abf5b06.js rel=prefetch>
+    <link href=/js/chunk-2d22fd6e.bfe13e30.js rel=prefetch>
+    <link href=/js/chunk-2d230dea.0181ee2b.js rel=prefetch>
+    <link href=/js/chunk-2d237151.0dc21c5f.js rel=prefetch>
+    <link href=/js/chunk-3245495b.48ecd301.js rel=prefetch>
+    <link href=/js/chunk-32fa970a.5f59d5dd.js rel=prefetch>
+    <link href=/js/chunk-3b29fe5e.3283f15c.js rel=prefetch>
+    <link href=/js/chunk-3daf759c.157b3609.js rel=prefetch>
+    <link href=/js/chunk-412a3470.bd0c962b.js rel=prefetch>
+    <link href=/js/chunk-417b1f08.e354f5d7.js rel=prefetch>
+    <link href=/js/chunk-4214295b.1f684c6c.js rel=prefetch>
+    <link href=/js/chunk-4266cb0e.d74f831e.js rel=prefetch>
+    <link href=/js/chunk-44cdc844.5714ccd2.js rel=prefetch>
+    <link href=/js/chunk-48626451.e6ee8883.js rel=prefetch>
+    <link href=/js/chunk-50e859e2.0b7ae743.js rel=prefetch>
+    <link href=/js/chunk-51524e9b.149dcc16.js rel=prefetch>
+    <link href=/js/chunk-551db3de.55e23e10.js rel=prefetch>
+    <link href=/js/chunk-554b2e65.cb33c461.js rel=prefetch>
+    <link href=/js/chunk-59c47205.90094890.js rel=prefetch>
+    <link href=/js/chunk-5a132a97.52e2c1b2.js rel=prefetch>
+    <link href=/js/chunk-5b50f5d7.0ee89a02.js rel=prefetch>
+    <link href=/js/chunk-5ccb5b1a.cf96e6f4.js rel=prefetch>
+    <link href=/js/chunk-5f143586.438f6fe0.js rel=prefetch>
+    <link href=/js/chunk-5f6a3d57.10841459.js rel=prefetch>
+    <link href=/js/chunk-5fb933a8.3fcd1b83.js rel=prefetch>
+    <link href=/js/chunk-61cbbfa6.bd7b3423.js rel=prefetch>
+    <link href=/js/chunk-61de5838.1eddc11a.js rel=prefetch>
+    <link href=/js/chunk-64025dce.0d9ace87.js rel=prefetch>
+    <link href=/js/chunk-643be02a.73da0455.js rel=prefetch>
+    <link href=/js/chunk-6b1b6bf7.174d62ff.js rel=prefetch>
+    <link href=/js/chunk-6f41b8a8.383466de.js rel=prefetch>
+    <link href=/js/chunk-748bf1bb.cdab2211.js rel=prefetch>
+    <link href=/js/chunk-74ad65e5.f079ddc0.js rel=prefetch>
+    <link href=/js/chunk-74d1bcf1.b39e8631.js rel=prefetch>
+    <link href=/js/chunk-757b809d.d941706a.js rel=prefetch>
+    <link href=/js/chunk-75a95f9c.ebe246b2.js rel=prefetch>
+    <link href=/js/chunk-764d1871.f1eacf1f.js rel=prefetch>
+    <link href=/js/chunk-770c52fc.eccc2a2d.js rel=prefetch>
+    <link href=/js/chunk-7b249b87.2065be5e.js rel=prefetch>
+    <link href=/js/chunk-8d2aa0c4.51074020.js rel=prefetch>
+    <link href=/js/chunk-8eb5ffa6.fbe64d1a.js rel=prefetch>
+    <link href=/js/chunk-958445f8.a515e6ae.js rel=prefetch>
+    <link href=/js/chunk-9c8fcbe6.53b70921.js rel=prefetch>
+    <link href=/js/chunk-a2dcb642.6859f698.js rel=prefetch>
+    <link href=/js/chunk-a4c6d038.e24d2361.js rel=prefetch>
+    <link href=/js/chunk-a6c77268.b3ffdf55.js rel=prefetch>
+    <link href=/js/chunk-a7fdfa28.217bcffa.js rel=prefetch>
+    <link href=/js/chunk-b7742df6.9134d2be.js rel=prefetch>
+    <link href=/js/chunk-bd85960e.d8f3d1dd.js rel=prefetch>
+    <link href=/js/chunk-be1520d4.5d91e93b.js rel=prefetch>
+    <link href=/js/chunk-c0d7a86e.d1bc14a8.js rel=prefetch>
+    <link href=/js/chunk-cc996eea.1f9d63b2.js rel=prefetch>
+    <link href=/js/chunk-d029bed6.b8e84bea.js rel=prefetch>
+    <link href=/js/chunk-d09dcba8.dec97c40.js rel=prefetch>
+    <link href=/js/chunk-d212f7da.fc2bd0ae.js rel=prefetch>
+    <link href=/js/chunk-d29eec52.e5a024dc.js rel=prefetch>
+    <link href=/js/chunk-d5685310.fe214690.js rel=prefetch>
+    <link href=/js/chunk-d81aaf22.378a720a.js rel=prefetch>
+    <link href=/js/chunk-d82d841e.5979de43.js rel=prefetch>
+    <link href=/js/chunk-f3c67876.01f739e2.js rel=prefetch>
+    <link href=/js/chunk-f463b15a.b1b97055.js rel=prefetch>
+    <link href=/css/app.b7af705d.css rel=preload as=style>
+    <link href=/css/chunk-vendors.68eea403.css rel=preload as=style>
+    <link href=/js/app.a33170f1.js rel=preload as=script>
+    <link href=/js/chunk-vendors.e54e9c00.js rel=preload as=script>
+    <link href=/css/chunk-vendors.68eea403.css rel=stylesheet>
+    <link href=/css/app.b7af705d.css rel=stylesheet>
+</head>
+
+<body><noscript><strong>We're sorry but Vuesax - Vuejs Admin Dashboard Template doesn't work properly without JavaScript
+            enabled. Please enable it to continue.</strong></noscript>
+    <div id=loading-bg>
+        <div class=loading-logo><img src=/logo.png alt=Logo></div>
+        <div class=loading>
+            <div class="effect-1 effects"></div>
+            <div class="effect-2 effects"></div>
+            <div class="effect-3 effects"></div>
+        </div>
+    </div>
+    <div id=app></div>
+    <script>
+        // window.url = "http://localhost:3001/api/";
+        window.url = "http://203.150.210.39:3003/api/";
+        // window.socket_host = "ws://127.0.0.1:3001";
+        window.socket_host="ws://203.150.210.39:3003";
+    </script>
+    <script src=/js/chunk-vendors.e54e9c00.js> </script> <script src=/js/app.a33170f1.js> </script> </body> </html>
