@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = require("express");
+const Dashboard_controller_1 = tslib_1.__importDefault(require("../controllers/Dashboard.controller"));
+const router = express_1.Router();
+const dashboard = new Dashboard_controller_1.default();
+router.post("/getchart_type", dashboard.getChartType);
+router.post("/getchart_option", dashboard.getChartOption);
+exports.default = router;

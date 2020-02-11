@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = require("express");
+const Equipment_Controller_1 = tslib_1.__importDefault(require("../controllers/Equipment.Controller"));
+const router = express_1.Router();
+const equipment = new Equipment_Controller_1.default();
+router.post("/getEquipment", equipment.getEquipment);
+router.post("/getFieldEquipment", equipment.getFieldEquipment);
+router.post("/addEquipment", equipment.addEquipment);
+router.post("/updateEquipment", equipment.updateEquipment);
+router.post("/deleteEquipment", equipment.deleteEquipment);
+exports.default = router;

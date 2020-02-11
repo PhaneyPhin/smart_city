@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = require("express");
+const DeviceTypeConfig_controller_1 = tslib_1.__importDefault(require("../controllers/DeviceTypeConfig.controller"));
+const router = express_1.Router();
+const deviceTypeConfig = new DeviceTypeConfig_controller_1.default();
+router.post("/addDeviceTypeConfig", deviceTypeConfig.addDeviceTypeConfig);
+router.post("/updateDeviceTypeConfig", deviceTypeConfig.updateDeviceTypeConfig);
+router.post("/getDeviceTypeConfig", deviceTypeConfig.getDeviceTypeConfig);
+router.post("/deleteDeviceTypeConfig", deviceTypeConfig.deleteDeviceTypeConfig);
+exports.default = router;

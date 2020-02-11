@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = require("express");
+const UserGroup_controller_1 = tslib_1.__importDefault(require("../controllers/UserGroup.controller"));
+const router = express_1.Router();
+const usergroup = new UserGroup_controller_1.default();
+router.post("/addUserGroup", usergroup.adduserGroup);
+router.post("/updateUserGroup", usergroup.updateuserGroup);
+router.post("/getUserGroup", usergroup.getUserGroup);
+router.post("/deleteUserGroup", usergroup.deleteuserGroup);
+router.post('/getDeviceForUserGroup', usergroup.getDeviceForUserGroup);
+exports.default = router;

@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = require("express");
+const DeviceGroupType_controller_1 = tslib_1.__importDefault(require("../controllers/DeviceGroupType.controller"));
+const router = express_1.Router();
+const deviceGroupType = new DeviceGroupType_controller_1.default();
+router.post("/addDeviceGroupType", deviceGroupType.addDeviceGroupType);
+router.post("/updateDeviceGroupType", deviceGroupType.updateDeviceGroupType);
+router.post("/getDeviceGroupType", deviceGroupType.getDeviceGroupType);
+router.post("/deleteDeviceGroupType", deviceGroupType.deleteDeviceGroupType);
+exports.default = router;
