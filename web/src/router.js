@@ -65,6 +65,14 @@ const router = new Router({
           }
         },
         {
+          path:"/call",
+          name:"Call",
+          component: () => import ('./views/pages/Voip/Call.vue'),
+          meta: {
+            rule: 'editor'
+          }
+        },
+        {
           path: '/dashboard/ecommerce',
           name: 'dashboardECommerce',
           component: () => import('./views/DashboardECommerce.vue'),
