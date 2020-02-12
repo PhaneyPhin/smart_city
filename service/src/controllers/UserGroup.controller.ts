@@ -39,14 +39,14 @@ export default class UserGroupController extends Connection {
                         return res.json({ ...this.success });
 
                     }, (err: any) => {
-                        return res.json({ code: 1, message: err.stack });
+                        return res.json({ code: -1, message: err.stack });
                     })
                 } catch (e) {
                     return res.json(e);
                 }
 
             }, (err: any) => {
-                return res.json({ code: 1, message: err.stack });
+                return res.json({ code: -1, message: err.stack });
             })
 
         } catch (e) {

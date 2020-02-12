@@ -245,6 +245,5 @@ function randomDate(d1:any, d2:any){
         return moment.unix(randomValueBetween(date2,date1)).format('YYYY-MM-DD HH:mm:ss');   
     } else{
         return moment.unix(randomValueBetween(date1, date2)).format('YYYY-MM-DD HH:mm:ss');
-
     }
 }

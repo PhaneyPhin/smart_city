@@ -101,22 +101,13 @@ var wsServer = new webSocketServer({
 wsServer.on('request', function(request:any) {
     console.log((new Date()) + ' Connection from origin ' + request.origin + ' url'+request.url+'.');
     var x=queryString.parse(request.url);
-    console.log('data',x);;
-    
-    // accept connection - you should check 'request.origin' to make sure that
-    // client is connecting from your website
-    // (http://en.wikipedia.org/wiki/Same_origin_policy)
+    console.log('data',x);
     var nu:any=null;
     var connection = request.accept(nu, request.origin); 
     
     var index = clients.push(connection) - 1;
     console.log((new Date()) + ' Connection accepted.');
-
-
-    // user disconnected
     connection.on('close', function(connection:any) {
-      
-            // remove user from the list of connected clients
             clients.splice(index, 1);
            
     });

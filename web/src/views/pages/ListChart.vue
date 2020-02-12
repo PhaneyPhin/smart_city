@@ -35,9 +35,6 @@ export default {
       console.log(e);
     },
     onDrag: function() {
-      // console.log(this.i);
-      // this.x = x;
-      // this.y = y;
       console.log(e);
     },
     addDashboard() {
