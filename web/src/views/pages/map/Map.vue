@@ -72,7 +72,7 @@
          <div class="  w-full todo-content-scroll-area" :settings="settings" ref="data_list" v-if='data.status==1'>
            <div :style="[{width:(300*channels.length)+'px'}]">
              <div class="vx-row pl-4 pt-5">
-            <div @click="viewVideo(1)" v-for="(item,index) of channels" :key="index">
+            <div v-for="(item,index) of channels" :key="index">
               <iframe
                 class="embed"
                 id="embed"
@@ -94,21 +94,6 @@
                   <td style="padding:20px">{{tr.value}}</td>
               </tr>
             </table>
-            <!-- <vs-table :data="infos">
-
-           
-
-            <template slot-scope="{data}">
-                <vs-tr :key="indextr" v-for="(tr, indextr) in data">
-                    <vs-td :data="data[indextr].name" style="width:40%">
-                        {{tr.name}}
-                    </vs-td>
-                    <vs-td :data="data[indextr].value">
-                        {{data[indextr].value}}
-                    </vs-td>
-                </vs-tr>
-            </template>
-        </vs-table> -->
           </div>
         </div>
       </div>
