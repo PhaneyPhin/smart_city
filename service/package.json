@@ -26,7 +26,7 @@
     "@types/query-string": "^6.3.0",
     "@types/request": "^2.48.4",
     "@types/websocket": "^1.0.0",
-    "async": "^3.1.0",
+    "async": "^3.2.2",
     "body-parse": "^0.1.0",
     "body-parser": "^1.19.0",
     "command-line-args": "^5.1.1",
